@@ -1,0 +1,97 @@
+target_names: ["fire", "other", "smoke"]
+seed: 20260616
+
+notes:
+  - "Stage6 is designed to reduce false positives while preserving V4 tiny-fire recall."
+  - "Do not enable mined hard negatives until review_manifest.csv rows are manually confirmed."
+  - "Keep public_hard_holdout and uav_false_alarm_v1 out of training."
+
+sources:
+  - id: sensors_full_tile_base
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_full_tile_sensors3/data.yaml"
+    splits: ["train", "val", "test"]
+    class_map:
+      fire: fire
+      other: other
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 0
+      val: 0
+      test: 0
+
+  - id: fasdd_uav_curated
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_sources/fasdd_uav_curated/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 0
+      val: 0
+
+  - id: dfire_smoke_and_negative
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_sources/dfire_curated/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 8000
+      val: 1500
+
+  - id: stage6_mined_confirmed_empty
+    enabled: false
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage6_sources/hard_negative_round01/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      other: other
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 5000
+      val: 800
+
+  - id: stage6_verified_empty_fp_round01
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage6_sources/verified_empty_fp_round01/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      other: other
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 0
+      val: 0
+
+  - id: stage6_verified_empty_fp_consensus_round02
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage6_sources/verified_empty_fp_consensus_round02/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      other: other
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 0
+      val: 0
+
+  - id: future_boreal_smoke_bbox
+    enabled: false
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage6_sources/boreal_forest_fire_yolo/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      smoke: smoke
+      fire: fire
+    include_empty: true
+    max_images:
+      train: 3000
+      val: 600

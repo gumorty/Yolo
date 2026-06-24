@@ -1,0 +1,98 @@
+generated_at: "2026-06-10"
+strategy_name: "stage4_data_first_p2_tile_scout"
+objective: "Improve UAV small fire/smoke recall and early-warning robustness before any 120-epoch long run."
+
+adopted_now:
+  - id: data_prior_gate
+    status: "implemented"
+    reason: "Third-round P2 failed because tiny/small smoke and high-resolution samples were insufficient."
+    evidence_file: "reports/stage4_full_tile_sensors3.readiness.json"
+    gate:
+      train_tiny_small_fire_min: 5000
+      train_tiny_small_smoke_min: 1000
+      valid_tiny_small_smoke_min: 100
+      highres_ratio_min: 0.20
+
+  - id: uav_target_domain_enrichment
+    status: "implemented"
+    datasets:
+      - "Sensors 3cls baseline"
+      - "FASDD_UAV as primary UAV fire/smoke domain"
+      - "D-Fire as controlled smoke/negative enrichment"
+    reason: "Small-object structures need target-domain samples, not only architecture changes."
+
+  - id: full_plus_tile_training
+    status: "implemented"
+    tile_size: 960
+    overlap: 0.25
+    min_visibility: 0.35
+    negative_ratio: 0.05
+    copy_full: true
+    reason: "Sliced fine-tuning and sliced inference literature shows small objects benefit when training sees enlarged local crops."
+
+  - id: p2_detection_head_retested_with_valid_data
+    status: "implemented"
+    model_yaml: "models/yolov8m-p2-fire-smoke-3cls.yaml"
+    reason: "P2 was not proven wrong in Stage3; it was tested on data without enough tiny/small smoke. Retest only after data prior passes."
+
+  - id: smoke_safe_augmentation
+    status: "implemented"
+    settings:
+      mosaic: 0.20
+      mixup: 0.0
+      copy_paste: 0.0
+      erasing: 0.0
+      auto_augment: "none"
+      close_mosaic: 5
+    reason: "Smoke is weak-boundary texture; aggressive erasing/mixup/randaugment can destroy the signal."
+
+  - id: hard_negative_retention
+    status: "implemented"
+    classes: ["other", "empty negative labels"]
+    reason: "Early warning should improve recall without uncontrolled false alarms."
+
+  - id: scout_before_long_training
+    status: "implemented"
+    epochs: 20
+    save_period: 5
+    reason: "Do not spend a full long run unless fixed hard holdout improves."
+
+  - id: hard_holdout_model_selection
+    status: "implemented"
+    holdout: "datasets/stage4_eval/public_hard_holdout/data.yaml"
+    selection_metrics:
+      - "small fire recall"
+      - "small smoke recall"
+      - "overall recall"
+      - "false positives"
+      - "first detection time on videos"
+    reason: "Default mAP50-95 best.pt did not select for our early-warning goal."
+
+candidate_after_scout:
+  - id: soft_nms_or_wbf_for_dense_fire_points
+    status: "post-scout"
+    reason: "Dense multi-fire-point scenes can suppress neighboring true positives with standard NMS."
+
+  - id: dy_sample_or_attention_guided_fpn
+    status: "post-scout_ablation"
+    reason: "Papers report feature alignment and content-aware upsampling help small objects, but code-level architecture changes must be isolated."
+
+  - id: cfpt_or_cross_scale_neck
+    status: "post-scout_ablation"
+    reason: "Cross-layer feature interaction addresses FPN semantic/spatial mismatch, but it is a separate architecture contribution."
+
+  - id: wise_iou_or_nwd_loss
+    status: "post-scout_ablation"
+    reason: "Small boxes are sensitive to IoU perturbations; changing loss requires framework-level modification and ablation."
+
+  - id: distillation_or_pruning
+    status: "deployment_phase"
+    reason: "Only useful after an accurate teacher model exists."
+
+explicitly_not_adopted_now:
+  - id: blindly_stack_all_modules
+    reason: "Combining P2, attention, new loss, transformer neck, and pruning at once makes results uninterpretable and risky."
+  - id: direct_visdrone_training_as_fire_smoke
+    reason: "VisDrone is UAV small-object data but not fire/smoke target-domain data."
+  - id: thermal_risk_claim_without_thermal_data
+    reason: "RGB cannot reliably predict high temperature; thermal branch is a later separate track."

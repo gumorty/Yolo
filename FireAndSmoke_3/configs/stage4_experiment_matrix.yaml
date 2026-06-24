@@ -1,0 +1,98 @@
+generated_at: "2026-06-08"
+stage: "stage4_data_first_small_object_recovery"
+primary_metric: "small_fire_smoke_recall_on_uav_hard_set"
+secondary_metrics:
+  - "overall_recall"
+  - "mAP50"
+  - "mAP50-95"
+  - "false_positives_per_minute"
+  - "first_detection_time_seconds"
+  - "fps_gpu"
+
+acceptance_gates_before_120_epoch_training:
+  - "On the fixed UAV hard set, small fire/smoke recall must improve by at least +5 absolute points over stage1 old YOLOv8m 3cls."
+  - "Overall recall must not drop below the stage1 baseline by more than 1 absolute point."
+  - "False positives per minute must be controllable by temporal confirmation without hiding true early detections."
+  - "GPU inference FPS must be measured in a CUDA environment; CPU FPS is only a relative debugging signal."
+
+fixed_evaluation_sets:
+  uav_hard_images:
+    description: "300-500 manually reviewed high-resolution UAV frames/images with tiny fire, weak smoke, multiple fire points, and confusing backgrounds."
+    required: true
+  uav_hard_videos:
+    description: "A small fixed set of representative UAV videos; report first detection time and false positives per minute."
+    required: true
+  current_sensors_valid_test:
+    description: "Keep current Sensors valid/test for backward compatibility, but do not let it dominate model selection."
+    required: true
+
+experiments:
+  - id: E0_old_baseline_remeasure
+    purpose: "Lock old baseline numbers on the new fixed hard set."
+    model: "YOLOv8m Sensors 3cls 100 epoch"
+    data: "no_training"
+    epochs: 0
+    imgsz: 640
+    notes:
+      - "This is the baseline for whether stage4 is worth training."
+
+  - id: E1_current_data_highres_control
+    purpose: "Test whether training settings alone help after reducing destructive augmentation."
+    model: "YOLOv8m 3cls"
+    data: "current Sensors 3cls only"
+    epochs: 15
+    imgsz: 960
+    pretrained: "stage1 old best.pt"
+    augment:
+      mosaic: 0.25
+      mixup: 0.0
+      copy_paste: 0.0
+      erasing: 0.0
+      auto_augment: "none"
+      close_mosaic: 5
+    decision_rule: "If E1 does not improve hard-set recall, architecture changes alone are not the bottleneck."
+
+  - id: E2_full_plus_tile_current
+    purpose: "Verify whether tile training, not just P2, helps small fire/smoke."
+    model: "YOLOv8m-P2 3cls"
+    data: "current high-resolution source if available; otherwise this experiment is blocked"
+    preprocessing: "build_highres_tile_dataset.py --tile-size 960 --overlap 0.25 --copy-full"
+    epochs: 20
+    imgsz: 960
+    pretrained: "stage1 old best.pt"
+    augment:
+      mosaic: 0.20
+      mixup: 0.0
+      copy_paste: 0.0
+      erasing: 0.0
+      close_mosaic: 5
+    decision_rule: "Continue only if small fire/smoke recall improves and video first-detection time is not worse."
+
+  - id: E3_dfire_fasdd_target_enrichment
+    purpose: "Add target fire/smoke diversity without pretending non-fire UAV datasets are fire data."
+    model: "YOLOv8m or YOLOv8m-P2 3cls"
+    data: "Sensors + curated D-Fire + FASDD-UAV if available + matched hard negatives"
+    epochs: 20
+    imgsz: 960
+    sampling:
+      max_external_ratio: 0.35
+      require_negative_balance: true
+      keep_uav_hard_set_external: true
+    decision_rule: "External data is accepted only if UAV hard-set small recall rises without large false alarm inflation."
+
+  - id: E4_visdrone_intermediate_pretrain
+    purpose: "Optional: learn UAV small-object localization before fire/smoke fine-tuning."
+    model: "YOLOv8m-P2 with VisDrone classes, then replace head for fire/smoke fine-tune"
+    data: "VisDrone2019-DET"
+    epochs: "10-30 scout, not a full run unless E2/E3 fail for localization reasons"
+    imgsz: 960
+    priority: "optional"
+    decision_rule: "Use only if target fire/smoke data is still too sparse and localization errors dominate."
+
+  - id: E5_rgb_thermal_risk_track
+    purpose: "Separate early-warning risk localization from RGB fire/smoke detection."
+    model: "thermal anomaly segmentation/classification branch plus RGB detector"
+    data: "FLAME3 / future paired UAV RGB-thermal data"
+    epochs: "separate research track"
+    priority: "later"
+    decision_rule: "Do not mix into current RGB detector until paired thermal labels and risk definition are ready."

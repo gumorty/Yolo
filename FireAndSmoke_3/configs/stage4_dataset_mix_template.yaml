@@ -1,0 +1,65 @@
+target_names: ["fire", "other", "smoke"]
+seed: 20260609
+
+sources:
+  - id: sensors3_base
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/strict_sensors_3cls/data.yaml"
+    splits: ["train", "val", "test"]
+    class_map:
+      fire: fire
+      other: other
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 0
+      val: 0
+      test: 0
+
+  - id: own_uav_hard_train
+    enabled: false
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_sources/uav_hard_train/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      other: other
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 0
+      val: 0
+
+  - id: fasdd_uav_curated
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_sources/fasdd_uav_curated/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 0
+      val: 0
+
+  - id: dfire_curated
+    enabled: true
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_sources/dfire_curated/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      fire: fire
+      smoke: smoke
+    include_empty: true
+    max_images:
+      train: 5000
+      val: 1000
+
+  - id: hard_negative_other
+    enabled: false
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_sources/hard_negative/data.yaml"
+    splits: ["train", "val"]
+    class_map:
+      other: other
+    include_empty: true
+    max_images:
+      train: 3000
+      val: 500

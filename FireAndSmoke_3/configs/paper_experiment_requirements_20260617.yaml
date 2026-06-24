@@ -1,0 +1,121 @@
+created: 2026-06-17
+project: UAV fire and smoke small-object detection
+target: SCI Q1/Q2 ready experimental support
+
+fixed_evaluation_sets:
+  public_hard_holdout:
+    path: datasets/stage4_eval/public_hard_holdout/data.yaml
+    status: available
+    images: 500
+    required_metrics:
+      - recall
+      - tiny_recall
+      - fire_recall
+      - smoke_recall
+      - fp_per_image
+      - precision_like
+  false_alarm_v1:
+    path: datasets/stage6_eval/uav_false_alarm_v1/data.yaml
+    status: preliminary_available
+    images: 100
+    limitation: too_small_for_final_paper
+  false_alarm_v2:
+    path: datasets/stage6_eval/uav_false_alarm_v2/data.yaml
+    status: available
+    images: 1000
+    candidate_empty_images: 1997
+    seed: 20260617
+    rule: verified_empty_labels_only
+
+model_groups:
+  current_internal:
+    - V4_P2
+    - S5_finetune
+    - NoP2_ablation
+  required_external_baselines:
+    - YOLOv8n_s_m_l
+    - YOLOv10_or_YOLOv11_family
+    - RT-DETR_or_Faster_RCNN_if_feasible
+    - lightweight_edge_model
+  future_candidate:
+    - Stage6_D1_union_conservative
+
+required_tables:
+  main_accuracy:
+    metrics:
+      - precision
+      - recall
+      - mAP50
+      - mAP50_95
+      - classwise_AP
+  small_object:
+    metrics:
+      - tiny_recall
+      - small_recall
+      - AP_S_if_available
+  false_alarm:
+    metrics:
+      - FP_per_100_images
+      - FP_per_image
+      - FP_by_class
+  threshold:
+    conf_values: [0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50]
+    operating_points:
+      recall_first: 0.15-0.20
+      balanced: 0.25
+      conservative_alarm: 0.30-0.40
+  efficiency:
+    metrics:
+      - params
+      - flops
+      - model_size_mb
+      - fps
+      - latency_ms
+
+stage6_d1_selection_gates:
+  public_hard_tiny_recall:
+    baseline_v4: 0.70852
+    target: 0.75
+    comparator: ">="
+  public_hard_fp_per_image:
+    baseline_v4: 0.542
+    target: 0.542
+    comparator: "<="
+  false_alarm_v1_fp_per_100:
+    baseline_v4: 2
+    target: 2
+    comparator: "<="
+  false_alarm_v2_fp_per_1000:
+    baseline_v4: 9
+    current_best_s5: 5
+    acceptable_target: 9
+    balanced_target: 5
+    comparator: "<="
+  public_hard_smoke_recall:
+    baseline_v4: 0.92523
+    comparator: ">="
+  holdout_map50_95_drop:
+    max_allowed_drop_from_v4: 0.01
+
+ablation_plan:
+  completed:
+    - P2_vs_NoP2
+    - threshold_scan_V4_S5_NoP2_public_hard
+    - threshold_scan_V4_S5_NoP2_false_alarm_v1
+    - threshold_scan_V4_S5_NoP2_false_alarm_v2
+  required:
+    - hard_negative_mining_effect
+    - sliced_inference_effect
+    - sliced_finetuning_effect
+    - conservative_training_policy_effect
+    - deployment_threshold_effect
+
+video_metrics:
+  required: true
+  source_dir: D:/Researching/Yolo/Yolo/docs
+  metrics:
+    - FP_per_minute
+    - first_detection_time
+    - missed_event_count
+    - temporal_flicker_count
+    - annotated_failure_examples

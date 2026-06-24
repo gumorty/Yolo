@@ -1,0 +1,119 @@
+generated_at: "2026-06-08"
+task_goal: "UAV fire/smoke small-object detection and early-warning risk localization"
+
+datasets:
+  - id: visdrone2019_det
+    name: "VisDrone2019-DET"
+    source_url: "https://github.com/VisDrone/VisDrone-Dataset"
+    modality: "RGB UAV"
+    label_type: "bounding_box"
+    classes: ["pedestrian", "people", "bicycle", "car", "van", "truck", "tricycle", "awning-tricycle", "bus", "motor"]
+    direct_use_for_fire_smoke: false
+    recommended_role: "small-object/UAV-domain pretraining and dense-scene detector sanity check"
+    priority: "medium"
+    use_stage: "optional_stage4_pretrain"
+    notes:
+      - "Do not map vehicles/persons to fire or smoke."
+      - "Useful for learning UAV scale, dense targets, occlusion, and high-altitude viewpoint before fire/smoke fine-tuning."
+      - "Best used only if we can afford an intermediate pretraining run or want to benchmark P2/neck changes."
+
+  - id: tiny_person
+    name: "TinyPerson"
+    source_url: "https://arxiv.org/abs/1912.10664"
+    modality: "RGB long-distance scenes"
+    label_type: "bounding_box"
+    classes: ["person"]
+    direct_use_for_fire_smoke: false
+    recommended_role: "scale-mismatch study reference; optional tiny-object pretraining"
+    priority: "low"
+    use_stage: "research_reference_or_optional_pretrain"
+    notes:
+      - "TinyPerson is valuable conceptually because it shows scale mismatch between pretraining and target data can hurt tiny detection."
+      - "Class/domain mismatch is large; not a first-choice dataset for the next expensive fire/smoke run."
+
+  - id: hit_uav
+    name: "HIT-UAV"
+    source_url: "https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset"
+    data_url: "https://zenodo.org/records/7633120"
+    modality: "infrared thermal UAV"
+    label_type: "standard_and_oriented_bounding_box"
+    classes: ["Person", "Car", "Bicycle", "OtherVehicle", "DontCare"]
+    direct_use_for_fire_smoke: false
+    recommended_role: "thermal/infrared branch pretraining and high-altitude thermal detection reference"
+    priority: "medium"
+    use_stage: "thermal_branch_later"
+    notes:
+      - "Useful for learning thermal UAV small-object texture, not for final fire/smoke classes."
+      - "Use later if RGB-T or thermal risk branch is reintroduced with real paired or radiometric data."
+
+  - id: ai_tod_v2
+    name: "AI-TOD-v2"
+    source_url: "https://eis-vipg.github.io/AI-TOD-v2/"
+    modality: "aerial RGB"
+    label_type: "bounding_box"
+    classes: ["airplane", "bridge", "storage-tank", "ship", "swimming-pool", "vehicle", "person", "wind-mill"]
+    direct_use_for_fire_smoke: false
+    recommended_role: "tiny-object method reference and optional detector pretraining"
+    priority: "low"
+    use_stage: "research_reference"
+    notes:
+      - "Important for NWD/RKA and tiny-object evaluation ideas."
+      - "Not a fire/smoke dataset; do not spend a full training cycle on it before fixing target data."
+
+  - id: d_fire
+    name: "D-Fire"
+    source_url: "https://github.com/gaia-solutions-on-demand/DFireDataset"
+    modality: "RGB surveillance/web fire-smoke"
+    label_type: "YOLO bounding_box"
+    classes: ["fire", "smoke"]
+    direct_use_for_fire_smoke: true
+    recommended_role: "fire/smoke source-domain enrichment, especially smoke-only and negative images"
+    priority: "high"
+    use_stage: "stage4_target_finetune"
+    notes:
+      - "Contains fire boxes, smoke boxes, and many no-fire/no-smoke images."
+      - "Not primarily UAV; use with sampling limits and hard-negative balancing."
+      - "Must keep a UAV hard validation set separate to avoid overfitting to surveillance perspectives."
+
+  - id: fasdd
+    name: "FASDD / FASDD-UAV"
+    source_url: "https://essd.copernicus.org/preprints/essd-2022-394/"
+    modality: "CV/UAV/remote-sensing fire-smoke"
+    label_type: "bounding_box"
+    classes: ["fire", "smoke"]
+    direct_use_for_fire_smoke: true
+    recommended_role: "highest-priority external UAV fire/smoke source if downloadable and license-compatible"
+    priority: "high"
+    use_stage: "stage4_target_finetune"
+    notes:
+      - "Prefer the UAV subset over generic CV/RS subsets."
+      - "Audit label quality and image resolution before mixing with current Sensors data."
+
+  - id: flame3
+    name: "FLAME 3"
+    source_url: "https://arxiv.org/abs/2412.02831"
+    data_url: "https://par.nsf.gov/biblio/10588422"
+    modality: "paired RGB + radiometric thermal UAV"
+    label_type: "classification/segmentation-style subsets, thermal TIFF"
+    classes: ["fire", "no_fire"]
+    direct_use_for_fire_smoke: "partial"
+    recommended_role: "thermal risk/temperature anomaly research track, not immediate YOLO bbox training"
+    priority: "medium"
+    use_stage: "early_warning_thermal_track_later"
+    notes:
+      - "Useful for high-temperature risk-region modeling because radiometric thermal gives per-pixel temperature estimates."
+      - "Needs conversion/annotation work before it becomes a YOLO fire/smoke bbox dataset."
+
+  - id: figlib_smokeynet
+    name: "FIgLib / SmokeyNet"
+    source_url: "https://arxiv.org/abs/2112.08598"
+    modality: "fixed wildfire camera RGB time series"
+    label_type: "image/time-series smoke labels"
+    classes: ["smoke", "no_smoke"]
+    direct_use_for_fire_smoke: "partial"
+    recommended_role: "early-smoke time-to-detection protocol reference"
+    priority: "medium"
+    use_stage: "video_alarm_protocol"
+    notes:
+      - "Important for early warning metrics: time-to-detection and temporal confirmation."
+      - "Not directly suitable for UAV bounding-box detector unless bbox annotations are added."

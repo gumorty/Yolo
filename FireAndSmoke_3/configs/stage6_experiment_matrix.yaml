@@ -1,0 +1,70 @@
+generated_at: "2026-06-16"
+stage: "stage6_false_alarm_reduction_and_uav_small_object_robustness"
+primary_goal: "Reduce false positives and fire/smoke confusion while preserving tiny fire recall from V4-P2."
+
+locked_evaluation_sets:
+  public_hard_holdout:
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_eval/public_hard_holdout/data.yaml"
+    role: "Tiny-fire and early-warning holdout; never train on it."
+  false_alarm_round01:
+    data: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage6_eval/uav_false_alarm_v1/data.yaml"
+    role: "Confirmed negative/hard-interference benchmark; build from reviewed video/image mining."
+  video_suite_round01:
+    source: "D:/Researching/Yolo/Yolo/docs/video"
+    role: "Video-level FP/min, first detection time, and stability test."
+
+decision_gates:
+  - "Hard-negative FP/image decreases by at least 30% compared with V4 at the balanced operating point."
+  - "Tiny fire Recall50 remains >= 0.89, and target is to keep V4 level around 0.91."
+  - "Holdout mAP50-95 improves by >= 0.01 or remains stable while false alarms sharply decrease."
+  - "Smoke recall improves without a large increase in smoke false positives."
+  - "GPU FPS is reported for full, sliced, and full_sliced modes."
+
+experiments:
+  - id: B0_v4_retest
+    model: "V4 YOLOv8m-P2 best.pt"
+    train: false
+    purpose: "Lock the current paper baseline on Stage6 evaluation sets."
+  - id: B1_s5_retest
+    model: "S5 fine-tuned best.pt"
+    train: false
+    purpose: "Check whether fine-tuning is actually useful under hard-negative evaluation."
+  - id: B2_nop2_retest
+    model: "No-P2 YOLOv8m best.pt"
+    train: false
+    purpose: "Keep the P2 structure ablation for tiny-fire recall."
+  - id: D1_stage6_data_only_ft
+    model: "YOLOv8m-P2 initialized from V4 best.pt"
+    data: "stage6_dataset_mix_template.yaml with mined hard negatives enabled after review"
+    epochs: 50
+    imgsz: 960
+    purpose: "Measure data cleaning and hard-negative mining without changing architecture."
+  - id: D2_stage6_sliced_ft
+    model: "YOLOv8m-P2 initialized from D1 best.pt"
+    data: "Stage6 clean plus sliced fine-tuning images"
+    epochs: 50
+    imgsz: 960
+    purpose: "Measure sliced fine-tuning contribution for UAV tiny fire/smoke."
+  - id: P1_threshold_nms_scan
+    model: "B0/B1/D1/D2 best.pt"
+    train: false
+    purpose: "Find recall-first and balanced deployment operating points."
+  - id: M1_loss_or_attention_candidate
+    model: "YOLOv8m-P2 plus one carefully isolated method change"
+    train: true
+    purpose: "Only run after D1/D2 show the remaining bottleneck is model-side rather than data-side."
+
+recommended_training_commands:
+  d1_fast_check: >
+    python tools/train_yolo_api.py
+    --model D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/models/yolov8m-p2-fire-smoke-3cls.yaml
+    --data D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage6_mixed_3cls_union/data.yaml
+    --project D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/runs_stage6
+    --name stage6_d1_union_conservative_e20
+    --pretrained D:/Researching/Yolo/Yolo/models_stage4/v4_best.pt
+    --epochs 20 --batch 4 --imgsz 960 --device 0 --workers 4 --patience 6
+    --mosaic 0.05 --mixup 0.0 --copy-paste 0.0 --close-mosaic 5
+    --auto-augment none --erasing 0.0
+    --optimizer AdamW --lr0 0.0001 --lrf 0.2 --weight-decay 0.0005
+    --warmup-epochs 0.0 --warmup-bias-lr 0.0001
+    --freeze 10 --amp true --save-period 2

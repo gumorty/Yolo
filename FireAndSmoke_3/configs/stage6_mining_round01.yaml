@@ -1,0 +1,26 @@
+model:
+  v4_best: "D:/Researching/Yolo/Yolo/models_stage4/v4_best.pt"
+  s5_best: "D:/Researching/Yolo/Yolo/models_stage4/s5_best.pt"
+  nop2_best: "D:/Researching/Yolo/Yolo/models_stage4/nop2_best.pt"
+
+sources:
+  videos: "D:/Researching/Yolo/Yolo/docs/video"
+  hard_holdout_images: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_eval/public_hard_holdout/images"
+  mixed_val_images: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage4_mixed_3cls/val/images"
+
+round01:
+  output_root: "D:/Researching/Yolo/FireAndSmoke/FireAndSmoke_3/datasets/stage6_mining/round01"
+  imgsz: 960
+  conf: 0.15
+  iou: 0.65
+  match_iou: 0.50
+  video_every: 45
+  max_frames_per_video: 80
+  max_images_per_source: 1200
+
+review_decisions:
+  confirmed_empty: "True negative hard negative; export as empty label for training."
+  relabel_fire: "Needs manual fire bbox label."
+  relabel_smoke: "Needs manual smoke bbox label."
+  relabel_other: "Needs manual other bbox label."
+  ignore_uncertain: "Ambiguous case; do not train on it."

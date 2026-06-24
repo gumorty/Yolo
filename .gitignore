@@ -1,0 +1,44 @@
+# Datasets (too large)
+FireAndSmoke_3/datasets/
+
+# Training runs
+FireAndSmoke_3/runs_stage6_local3070/
+FireAndSmoke_3/runs_stage6_scout/
+FireAndSmoke_3/runs_stage6_smoke/
+
+# Weights
+FireAndSmoke_3/weights/
+
+# Logs
+FireAndSmoke_3/logs/
+
+# Models
+FireAndSmoke_3/models/
+
+# Reports
+FireAndSmoke_3/reports/
+
+# Paper PDF
+FireAndSmoke_3/sensors-24-05597.pdf
+
+# Planning
+FireAndSmoke_3/.planning/
+
+# Artifacts
+FireAndSmoke_3/artifacts/
+
+# Paper artifacts (large)
+FireAndSmoke_3/paper_artifacts/
+
+# PyTorch model files
+FireAndSmoke_3/yolo26n.pt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/

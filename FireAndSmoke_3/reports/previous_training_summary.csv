@@ -1,0 +1,9 @@
+name,run,epochs,metrics/precision(B),metrics/recall(B),metrics/mAP50(B),metrics/mAP50-95(B)
+yolov10m_firesmoke_3cls2,D:\Researching\Training_After\FireAndSmoke\FireSmoke_Reproduction\repos\runs\yolov10m_firesmoke_3cls2,5,0.7165,0.65771,0.71998,0.42379
+yolov10m_firesmoke_3cls_100,D:\Researching\Training_After\FireAndSmoke\FireSmoke_Reproduction\repos\runs\yolov10m_firesmoke_3cls_100,100,0.8274,0.78014,0.84626,0.57706
+yolov8m_firesmoke_2cls2,D:\Researching\Training_After\FireAndSmoke\FireSmoke_Reproduction\repos\runs\yolov8m_firesmoke_2cls2,5,0.74538,0.72083,0.79436,0.48579
+yolov8m_firesmoke_2cls_100,D:\Researching\Training_After\FireAndSmoke\FireSmoke_Reproduction\repos\runs\yolov8m_firesmoke_2cls_100,100,0.85393,0.83254,0.89052,0.61493
+yolov8m_firesmoke_3cls2,D:\Researching\Training_After\FireAndSmoke\FireSmoke_Reproduction\repos\runs\yolov8m_firesmoke_3cls2,5,0.72798,0.66836,0.7335,0.43938
+yolov8m_firesmoke_3cls_100,D:\Researching\Training_After\FireAndSmoke\FireSmoke_Reproduction\repos\runs\yolov8m_firesmoke_3cls_100,100,0.83597,0.78047,0.84562,0.57364
+yolov8m_augmented_2cls_e1505,D:\Researching\Training_After\FireAndSmoke_Two_Train\repos\runs\yolov8m_augmented_2cls_e1505,150,0.87154,0.8207,0.88555,0.61064
+yolov8m_augmented_3cls_e150,D:\Researching\Training_After\FireAndSmoke_Two_Train\repos\runs\yolov8m_augmented_3cls_e150,150,0.83742,0.77977,0.83913,0.57151

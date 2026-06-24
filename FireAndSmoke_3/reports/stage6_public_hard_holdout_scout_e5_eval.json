@@ -1,0 +1,43 @@
+{
+  "model": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\runs_stage6_scout\\stage6_scout_hardneg_ft_e5\\weights\\best.pt",
+  "data": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_eval\\public_hard_holdout\\data.yaml",
+  "split": "val",
+  "imgsz": 960,
+  "conf": 0.2,
+  "iou": 0.5,
+  "images": 500,
+  "gt_by_size": {
+    "tiny": 446,
+    "small": 657,
+    "medium": 215,
+    "large": 495
+  },
+  "matched_by_size": {
+    "tiny": 298,
+    "small": 542,
+    "medium": 193,
+    "large": 486
+  },
+  "recall_by_size": {
+    "tiny": 0.6681614349775785,
+    "small": 0.8249619482496194,
+    "medium": 0.8976744186046511,
+    "large": 0.9818181818181818
+  },
+  "gt_by_class": {
+    "0": 1278,
+    "2": 535
+  },
+  "matched_by_class": {
+    "0": 1027,
+    "2": 492
+  },
+  "recall_by_class": {
+    "0": 0.8035993740219093,
+    "2": 0.9196261682242991
+  },
+  "false_positive_by_class": {
+    "2": 112,
+    "0": 254
+  }
+}

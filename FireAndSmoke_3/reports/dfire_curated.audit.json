@@ -1,0 +1,143 @@
+{
+  "data_yaml": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\dfire_curated\\data.yaml",
+  "names": {
+    "0": "fire",
+    "1": "other",
+    "2": "smoke"
+  },
+  "splits": {
+    "train": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\dfire_curated\\train\\images",
+      "images": 17221,
+      "missing_labels": 0,
+      "empty_labels": 7833,
+      "duplicate_labels": 0,
+      "invalid_labels": 0,
+      "instances": {
+        "smoke": 11814,
+        "fire": 9550
+      },
+      "area_bins": {
+        "medium(1-5%)": 4361,
+        "small(0.1-1%)": 7434,
+        "large(>=5%)": 7506,
+        "tiny(<0.1%)": 2063
+      },
+      "class_area_bins": {
+        "smoke|medium(1-5%)": 2800,
+        "fire|small(0.1-1%)": 1711,
+        "fire|large(>=5%)": 6093,
+        "fire|tiny(<0.1%)": 185,
+        "smoke|small(0.1-1%)": 5723,
+        "smoke|tiny(<0.1%)": 1878,
+        "smoke|large(>=5%)": 1413,
+        "fire|medium(1-5%)": 1561
+      },
+      "image_shapes": {
+        "961-1280": 8619,
+        ">1280": 693,
+        "641-960": 1968,
+        "max_side<=640": 5941
+      }
+    },
+    "valid": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\dfire_curated\\val\\images",
+      "images": 4306,
+      "missing_labels": 0,
+      "empty_labels": 2005,
+      "duplicate_labels": 0,
+      "invalid_labels": 8,
+      "instances": {
+        "fire": 2307,
+        "smoke": 2878
+      },
+      "area_bins": {
+        "small(0.1-1%)": 1809,
+        "tiny(<0.1%)": 550,
+        "medium(1-5%)": 1034,
+        "large(>=5%)": 1792
+      },
+      "class_area_bins": {
+        "fire|small(0.1-1%)": 439,
+        "fire|tiny(<0.1%)": 60,
+        "smoke|medium(1-5%)": 679,
+        "smoke|small(0.1-1%)": 1370,
+        "fire|large(>=5%)": 1453,
+        "smoke|large(>=5%)": 339,
+        "smoke|tiny(<0.1%)": 490,
+        "fire|medium(1-5%)": 355
+      },
+      "image_shapes": {
+        "961-1280": 2142,
+        "641-960": 434,
+        ">1280": 180,
+        "max_side<=640": 1550
+      }
+    },
+    "test": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\dfire_curated\\test\\images",
+      "images": 4306,
+      "missing_labels": 0,
+      "empty_labels": 2005,
+      "duplicate_labels": 0,
+      "invalid_labels": 8,
+      "instances": {
+        "fire": 2307,
+        "smoke": 2878
+      },
+      "area_bins": {
+        "small(0.1-1%)": 1809,
+        "tiny(<0.1%)": 550,
+        "medium(1-5%)": 1034,
+        "large(>=5%)": 1792
+      },
+      "class_area_bins": {
+        "fire|small(0.1-1%)": 439,
+        "fire|tiny(<0.1%)": 60,
+        "smoke|medium(1-5%)": 679,
+        "smoke|small(0.1-1%)": 1370,
+        "fire|large(>=5%)": 1453,
+        "smoke|large(>=5%)": 339,
+        "smoke|tiny(<0.1%)": 490,
+        "fire|medium(1-5%)": 355
+      },
+      "image_shapes": {
+        "961-1280": 2142,
+        "641-960": 434,
+        ">1280": 180,
+        "max_side<=640": 1550
+      }
+    }
+  },
+  "totals": {
+    "images": 25833,
+    "missing_labels": 0,
+    "empty_labels": 11843,
+    "instances": {
+      "smoke": 17570,
+      "fire": 14164
+    },
+    "area_bins": {
+      "medium(1-5%)": 6429,
+      "small(0.1-1%)": 11052,
+      "large(>=5%)": 11090,
+      "tiny(<0.1%)": 3163
+    },
+    "class_area_bins": {
+      "smoke|medium(1-5%)": 4158,
+      "fire|small(0.1-1%)": 2589,
+      "fire|large(>=5%)": 8999,
+      "fire|tiny(<0.1%)": 305,
+      "smoke|small(0.1-1%)": 8463,
+      "smoke|tiny(<0.1%)": 2858,
+      "smoke|large(>=5%)": 2091,
+      "fire|medium(1-5%)": 2271
+    },
+    "image_shapes": {
+      "961-1280": 12903,
+      ">1280": 1053,
+      "641-960": 2836,
+      "max_side<=640": 9041
+    }
+  }
+}

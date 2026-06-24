@@ -1,0 +1,54 @@
+{
+  "model": "/home/uav/gu/stage4/runs/stage4_scout_p2_fasdd_dfire_tile_e20/weights/best.pt",
+  "empty_images": 100,
+  "conf_results": [
+    {
+      "conf": 0.15,
+      "total_false_predictions": 2,
+      "images_with_false_prediction": 2,
+      "fp_by_class": {
+        "smoke": 2
+      }
+    },
+    {
+      "conf": 0.2,
+      "total_false_predictions": 2,
+      "images_with_false_prediction": 2,
+      "fp_by_class": {
+        "smoke": 2
+      }
+    },
+    {
+      "conf": 0.25,
+      "total_false_predictions": 2,
+      "images_with_false_prediction": 2,
+      "fp_by_class": {
+        "smoke": 2
+      }
+    },
+    {
+      "conf": 0.3,
+      "total_false_predictions": 2,
+      "images_with_false_prediction": 2,
+      "fp_by_class": {
+        "smoke": 2
+      }
+    },
+    {
+      "conf": 0.35,
+      "total_false_predictions": 1,
+      "images_with_false_prediction": 1,
+      "fp_by_class": {
+        "smoke": 1
+      }
+    },
+    {
+      "conf": 0.4,
+      "total_false_predictions": 1,
+      "images_with_false_prediction": 1,
+      "fp_by_class": {
+        "smoke": 1
+      }
+    }
+  ]
+}

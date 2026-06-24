@@ -1,0 +1,204 @@
+{
+  "synced_at": "2026-06-16T16:38:09",
+  "host": "221.14.87.239",
+  "remote_root": "/home/uav/gu",
+  "local_root": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616",
+  "file_count": 32,
+  "total_bytes": 370078531,
+  "missing": [],
+  "files": [
+    {
+      "remote": "/home/uav/gu/ablation_p2/runs/yolov8m_nop2_baseline_960/args.yaml",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\runs\\yolov8m_nop2_baseline_960\\args.yaml",
+      "bytes": 1757,
+      "mtime": "2026-06-14T14:15:10"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/runs/yolov8m_nop2_baseline_960/results.csv",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\runs\\yolov8m_nop2_baseline_960\\results.csv",
+      "bytes": 11535,
+      "mtime": "2026-06-15T13:55:21"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/runs/yolov8m_nop2_baseline_960/weights/best.pt",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\runs\\yolov8m_nop2_baseline_960\\weights\\best.pt",
+      "bytes": 52102603,
+      "mtime": "2026-06-15T13:55:22"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/runs/yolov8m_nop2_baseline_960/weights/last.pt",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\runs\\yolov8m_nop2_baseline_960\\weights\\last.pt",
+      "bytes": 52102603,
+      "mtime": "2026-06-15T13:55:22"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/train_nop2_baseline.log",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\train_nop2_baseline.log",
+      "bytes": 52856091,
+      "mtime": "2026-06-15T13:57:06"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/train_yolov8m_nop2_baseline.py",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\train_yolov8m_nop2_baseline.py",
+      "bytes": 4480,
+      "mtime": "2026-06-14T14:08:53"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/yolov8m_noP2_3cls.yaml",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\yolov8m_noP2_3cls.yaml",
+      "bytes": 1069,
+      "mtime": "2026-06-14T14:00:49"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/datasets/stage4_eval/public_hard_holdout/data.yaml",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\datasets\\stage4_eval\\public_hard_holdout\\data.yaml",
+      "bytes": 83,
+      "mtime": "2026-06-10T22:18:34"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/datasets/stage4_eval/public_hard_holdout/manifest.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\datasets\\stage4_eval\\public_hard_holdout\\manifest.json",
+      "bytes": 258810,
+      "mtime": "2026-06-10T22:19:01"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/datasets/stage4_full_tile_sensors3/data.yaml",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\datasets\\stage4_full_tile_sensors3\\data.yaml",
+      "bytes": 98,
+      "mtime": "2026-06-10T22:19:01"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/reports/public_hard_holdout.audit.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\reports\\public_hard_holdout.audit.json",
+      "bytes": 3644,
+      "mtime": "2026-06-11T01:37:56"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/reports/stage4_eval_compare/empty_negative_fp_check_best.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\reports\\stage4_eval_compare\\empty_negative_fp_check_best.json",
+      "bytes": 1098,
+      "mtime": "2026-06-11T17:18:09"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/reports/stage4_eval_compare/stage4_public_holdout_compare_best.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\reports\\stage4_eval_compare\\stage4_public_holdout_compare_best.json",
+      "bytes": 69994,
+      "mtime": "2026-06-11T16:50:39"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/reports/stage4_full_tile_sensors3.audit.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\reports\\stage4_full_tile_sensors3.audit.json",
+      "bytes": 4527,
+      "mtime": "2026-06-11T01:37:56"
+    },
+    {
+      "remote": "/home/uav/gu/projects/FireAndSmoke_3/reports/stage4_full_tile_sensors3.readiness.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\projects\\FireAndSmoke_3\\reports\\stage4_full_tile_sensors3.readiness.json",
+      "bytes": 1318,
+      "mtime": "2026-06-11T01:37:56"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/eval_public_holdout/holdout_e20_best_v2/predictions.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\eval_public_holdout\\holdout_e20_best_v2\\predictions.json",
+      "bytes": 384898,
+      "mtime": "2026-06-12T20:17:50"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/eval_public_holdout/holdout_e20_best_v2_results.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\eval_public_holdout\\holdout_e20_best_v2_results.json",
+      "bytes": 566,
+      "mtime": "2026-06-12T20:18:56"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/eval_public_holdout/holdout_s5_best/predictions.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\eval_public_holdout\\holdout_s5_best\\predictions.json",
+      "bytes": 2101073,
+      "mtime": "2026-06-14T12:54:22"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/eval_public_holdout/holdout_s5_best_results.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\eval_public_holdout\\holdout_s5_best_results.json",
+      "bytes": 551,
+      "mtime": "2026-06-14T12:54:23"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/eval_public_holdout/holdout_v4_best/predictions.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\eval_public_holdout\\holdout_v4_best\\predictions.json",
+      "bytes": 2305662,
+      "mtime": "2026-06-13T14:19:25"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/eval_public_holdout/holdout_v4_best_v2/predictions.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\eval_public_holdout\\holdout_v4_best_v2\\predictions.json",
+      "bytes": 2305662,
+      "mtime": "2026-06-13T14:21:09"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/eval_public_holdout/holdout_v4_best_v2_results.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\eval_public_holdout\\holdout_v4_best_v2_results.json",
+      "bytes": 554,
+      "mtime": "2026-06-13T14:21:10"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage4_e60_v4_corrected/args.yaml",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage4_e60_v4_corrected\\args.yaml",
+      "bytes": 1779,
+      "mtime": "2026-06-12T21:59:02"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage4_e60_v4_corrected/results.csv",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage4_e60_v4_corrected\\results.csv",
+      "bytes": 6568,
+      "mtime": "2026-06-13T13:54:13"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage4_e60_v4_corrected/weights/best.pt",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage4_e60_v4_corrected\\weights\\best.pt",
+      "bytes": 50900153,
+      "mtime": "2026-06-13T13:54:15"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage4_e60_v4_corrected/weights/last.pt",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage4_e60_v4_corrected\\weights\\last.pt",
+      "bytes": 50900153,
+      "mtime": "2026-06-13T13:54:15"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage5_e120_from_v4best/args.yaml",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage5_e120_from_v4best\\args.yaml",
+      "bytes": 1760,
+      "mtime": "2026-06-13T14:24:50"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage5_e120_from_v4best/results.csv",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage5_e120_from_v4best\\results.csv",
+      "bytes": 7807,
+      "mtime": "2026-06-14T10:06:56"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage5_e120_from_v4best/weights/best.pt",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage5_e120_from_v4best\\weights\\best.pt",
+      "bytes": 50901177,
+      "mtime": "2026-06-14T10:06:57"
+    },
+    {
+      "remote": "/home/uav/gu/stage4/runs/stage5_e120_from_v4best/weights/last.pt",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\stage4\\runs\\stage5_e120_from_v4best\\weights\\last.pt",
+      "bytes": 50901177,
+      "mtime": "2026-06-14T10:06:56"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/eval_public_holdout/holdout_nop2_best/predictions.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\eval_public_holdout\\holdout_nop2_best\\predictions.json",
+      "bytes": 1938734,
+      "mtime": "2026-06-16T16:40:46"
+    },
+    {
+      "remote": "/home/uav/gu/ablation_p2/eval_public_holdout/holdout_nop2_best_results.json",
+      "local": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\paper_artifacts\\server_sync_20260616\\ablation_p2\\eval_public_holdout\\holdout_nop2_best_results.json",
+      "bytes": 547,
+      "mtime": "2026-06-16T16:40:08"
+    }
+  ],
+  "updated_at": "2026-06-16T16:41:01"
+}

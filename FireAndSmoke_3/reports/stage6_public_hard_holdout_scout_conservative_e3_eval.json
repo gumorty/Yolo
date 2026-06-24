@@ -1,0 +1,43 @@
+{
+  "model": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\runs_stage6_scout\\stage6_scout_conservative_e3\\weights\\best.pt",
+  "data": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_eval\\public_hard_holdout\\data.yaml",
+  "split": "val",
+  "imgsz": 960,
+  "conf": 0.2,
+  "iou": 0.5,
+  "images": 500,
+  "gt_by_size": {
+    "tiny": 446,
+    "small": 657,
+    "medium": 215,
+    "large": 495
+  },
+  "matched_by_size": {
+    "tiny": 345,
+    "small": 573,
+    "medium": 199,
+    "large": 485
+  },
+  "recall_by_size": {
+    "tiny": 0.773542600896861,
+    "small": 0.8721461187214612,
+    "medium": 0.9255813953488372,
+    "large": 0.9797979797979798
+  },
+  "gt_by_class": {
+    "0": 1278,
+    "2": 535
+  },
+  "matched_by_class": {
+    "0": 1101,
+    "2": 501
+  },
+  "recall_by_class": {
+    "0": 0.8615023474178404,
+    "2": 0.9364485981308411
+  },
+  "false_positive_by_class": {
+    "2": 117,
+    "0": 473
+  }
+}

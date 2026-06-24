@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-06-12T12:18:56.561635",
+  "weights": "/home/uav/gu/stage4/runs/stage4_scout_p2_fasdd_dfire_tile_e20/weights/best.pt",
+  "data": "/home/uav/gu/projects/FireAndSmoke_3/datasets/stage4_eval/public_hard_holdout/data.yaml",
+  "mAP50": 0.8567690691696426,
+  "mAP50-95": 0.6386074441693881,
+  "precision": 0.878282463547874,
+  "recall": 0.8751751422345078,
+  "per_class": {
+    "fire": {
+      "AP50": 0.7727924949074078,
+      "AP": 0.4906760872608801
+    },
+    "other": {
+      "AP50": 0.9407456434318773,
+      "AP": 0.786538801077896
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "data_yaml": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\strict_sensors_3cls\\data.yaml",
+  "names": {
+    "0": "fire",
+    "1": "other",
+    "2": "smoke"
+  },
+  "splits": {
+    "train": {
+      "image_dir": "D:\\Researching\\FireSmoke_Reproduction\\repos\\datasets\\raw_yolov8\\yolov8\\train\\images",
+      "images": 17305,
+      "missing_labels": 0,
+      "empty_labels": 499,
+      "duplicate_labels": 1,
+      "invalid_labels": 0,
+      "instances": {
+        "smoke": 16135,
+        "fire": 17187,
+        "other": 9499
+      },
+      "area_bins": {
+        "large(>=5%)": 20571,
+        "small(0.1-1%)": 11214,
+        "medium(1-5%)": 10596,
+        "tiny(<0.1%)": 440
+      }
+    },
+    "valid": {
+      "image_dir": "D:\\Researching\\FireSmoke_Reproduction\\repos\\datasets\\raw_yolov8\\yolov8\\valid\\images",
+      "images": 7248,
+      "missing_labels": 0,
+      "empty_labels": 196,
+      "duplicate_labels": 1,
+      "invalid_labels": 0,
+      "instances": {
+        "other": 3680,
+        "fire": 6783,
+        "smoke": 5857
+      },
+      "area_bins": {
+        "small(0.1-1%)": 4313,
+        "large(>=5%)": 7756,
+        "medium(1-5%)": 4039,
+        "tiny(<0.1%)": 212
+      }
+    },
+    "test": {
+      "image_dir": "D:\\Researching\\FireSmoke_Reproduction\\repos\\datasets\\raw_yolov8\\yolov8\\test\\images",
+      "images": 2741,
+      "missing_labels": 0,
+      "empty_labels": 47,
+      "duplicate_labels": 1,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 2747,
+        "smoke": 2568,
+        "other": 1492
+      },
+      "area_bins": {
+        "small(0.1-1%)": 1807,
+        "large(>=5%)": 3286,
+        "medium(1-5%)": 1651,
+        "tiny(<0.1%)": 63
+      }
+    }
+  },
+  "totals": {
+    "images": 27294,
+    "missing_labels": 0,
+    "empty_labels": 742,
+    "instances": {
+      "smoke": 24560,
+      "fire": 26717,
+      "other": 14671
+    },
+    "area_bins": {
+      "large(>=5%)": 31613,
+      "small(0.1-1%)": 17334,
+      "medium(1-5%)": 16286,
+      "tiny(<0.1%)": 715
+    }
+  }
+}

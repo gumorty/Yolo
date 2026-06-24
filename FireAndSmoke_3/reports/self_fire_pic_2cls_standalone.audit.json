@@ -1,0 +1,78 @@
+{
+  "data_yaml": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\self_fire_pic_2cls_standalone\\data.yaml",
+  "names": {
+    "0": "fire",
+    "1": "smoke"
+  },
+  "splits": {
+    "train": {
+      "image_dir": "D:\\Researching\\Yolo\\Yolo\\fire_pic\\fire_dataset\\fire_dataset_all\\images\\train",
+      "images": 11227,
+      "missing_labels": 0,
+      "empty_labels": 601,
+      "duplicate_labels": 0,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 20446,
+        "smoke": 8945
+      },
+      "area_bins": {
+        "large(>=5%)": 11522,
+        "medium(1-5%)": 5962,
+        "small(0.1-1%)": 9048,
+        "tiny(<0.1%)": 2859
+      }
+    },
+    "valid": {
+      "image_dir": "D:\\Researching\\Yolo\\Yolo\\fire_pic\\fire_dataset\\fire_dataset_all\\images\\val",
+      "images": 3207,
+      "missing_labels": 0,
+      "empty_labels": 148,
+      "duplicate_labels": 1,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 5832,
+        "smoke": 2662
+      },
+      "area_bins": {
+        "large(>=5%)": 3227,
+        "medium(1-5%)": 1744,
+        "small(0.1-1%)": 2684,
+        "tiny(<0.1%)": 839
+      }
+    },
+    "test": {
+      "image_dir": "D:\\Researching\\Yolo\\Yolo\\fire_pic\\fire_dataset\\fire_dataset_all\\images\\test",
+      "images": 1605,
+      "missing_labels": 0,
+      "empty_labels": 80,
+      "duplicate_labels": 1,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 2859,
+        "smoke": 1351
+      },
+      "area_bins": {
+        "large(>=5%)": 1645,
+        "medium(1-5%)": 791,
+        "small(0.1-1%)": 1351,
+        "tiny(<0.1%)": 423
+      }
+    }
+  },
+  "totals": {
+    "images": 16039,
+    "missing_labels": 0,
+    "empty_labels": 829,
+    "instances": {
+      "fire": 29137,
+      "smoke": 12958
+    },
+    "area_bins": {
+      "large(>=5%)": 16394,
+      "medium(1-5%)": 8497,
+      "small(0.1-1%)": 13083,
+      "tiny(<0.1%)": 4121
+    }
+  }
+}

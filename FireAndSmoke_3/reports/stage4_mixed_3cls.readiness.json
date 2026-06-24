@@ -1,0 +1,55 @@
+{
+  "data_yaml": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_mixed_3cls\\data.yaml",
+  "pass": true,
+  "checks": [
+    {
+      "name": "train tiny+small fire",
+      "value": 19295,
+      "threshold": 5000,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "train tiny+small smoke",
+      "value": 4063,
+      "threshold": 1000,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "valid tiny+small fire",
+      "value": 11088,
+      "threshold": 300,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "valid tiny+small smoke",
+      "value": 1533,
+      "threshold": 100,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "total tiny+small other hard negatives",
+      "value": 9596,
+      "threshold": 1000,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "high-resolution source ratio",
+      "value": 0.4584,
+      "threshold": 0.2,
+      "op": ">=",
+      "pass": true
+    }
+  ],
+  "image_shapes": {
+    "961-1280": 8739,
+    "641-960": 646,
+    ">1280": 15466,
+    "max_side<=640": 29359
+  },
+  "recommendation": "Dataset prior is acceptable for 10-20 epoch scout training. Do not start 120 epochs until scout improves the fixed holdout metrics."
+}

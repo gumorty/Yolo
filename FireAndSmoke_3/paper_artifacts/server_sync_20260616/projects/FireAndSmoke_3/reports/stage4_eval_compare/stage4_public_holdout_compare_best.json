@@ -1,0 +1,1538 @@
+{
+  "image_dir": "datasets/stage4_eval/public_hard_holdout/images",
+  "max_images": 500,
+  "seed": 20260610,
+  "require_small_fire_smoke": true,
+  "evaluated_images": [
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003623.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005800.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002116.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004394.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001381.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003907.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007234.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001557.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004103.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002915.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006781.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000813.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002385.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007573.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000374.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001160.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005099.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004004.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002191.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007428.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002472.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002637.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003654.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007210.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005310.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001302.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004249.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000006.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003237.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002425.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006799.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002069.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007062.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007038.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004798.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000197.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000110.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002735.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000515.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002503.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004424.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000926.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003833.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001058.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000965.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004838.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003198.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004103.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007111.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004507.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000193.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000780.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001444.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002760.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003934.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000252.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003843.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007710.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007243.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004966.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006932.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005666.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004099.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000579.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000594.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004032.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001067.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003282.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000242.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007108.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000754.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001139.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000058.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005229.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000226.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007333.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001590.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000476.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005789.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003311.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003645.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003448.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007452.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003330.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000791.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005628.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005544.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007692.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003807.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000807.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001629.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000120.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004168.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002598.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005206.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003224.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000516.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000811.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002446.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004102.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005349.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002517.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003069.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004362.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000912.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002738.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002775.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000882.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000250.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005053.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006822.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006491.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000599.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000145.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003610.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002259.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006094.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000148.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002082.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000201.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000592.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006447.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004353.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006843.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003264.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002487.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003543.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002548.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003195.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007565.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003380.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003763.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005441.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006598.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003681.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006121.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006730.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002589.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003495.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006034.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000885.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006445.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000199.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005218.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002700.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006591.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004842.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002651.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003122.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007449.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004511.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005400.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002501.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002091.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005014.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003488.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006988.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007595.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005098.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007287.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006099.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007589.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003763.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002502.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004165.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006568.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003440.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000081.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001737.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000731.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006469.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007616.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004129.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002454.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001376.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004377.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007220.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002619.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006920.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000006.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004514.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001963.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000936.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000569.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007011.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000939.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002542.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005204.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002025.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007700.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001637.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004916.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006862.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006092.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004349.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001380.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000108.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000320.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002119.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004099.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005167.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002752.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003775.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004328.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000875.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004596.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003654.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001245.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000042.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004094.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001616.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007370.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004894.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005700.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003685.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003648.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005158.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003108.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001278.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002563.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003523.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006455.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006529.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003035.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003881.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007020.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000289.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001970.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003724.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004467.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004411.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002812.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001134.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005597.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001996.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007064.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007460.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000942.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005168.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003276.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004178.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003254.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003546.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001068.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007481.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002378.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007032.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005810.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003096.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000592.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002425.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000012.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004144.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002923.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000101.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006791.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003724.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001024.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000068.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002907.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002958.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000626.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002952.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000548.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003710.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001395.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003789.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003143.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002527.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004434.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003394.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002385.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002922.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002480.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000432.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000926.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000356.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004420.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000976.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006050.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001682.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000908.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006177.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002555.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005637.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001050.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003191.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000685.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000151.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007317.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000061.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006995.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002914.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007240.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001414.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003656.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000577.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007502.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006389.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002304.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000569.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002909.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000962.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007115.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007762.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002914.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000933.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006967.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000516.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007743.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000140.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005767.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003386.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000696.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001306.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005598.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003791.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003589.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007528.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005479.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004837.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000046.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004403.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002382.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000290.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002816.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006442.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000082.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006899.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006434.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000813.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000065.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003669.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006971.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003713.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007707.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003295.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001444.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002132.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003781.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004480.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002448.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003590.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001417.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV003224.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004033.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000789.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003319.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004993.jpg",
+    "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV004144.jpg"
+  ],
+  "results": [
+    {
+      "name": "old_yolov8m_3cls_normal_640",
+      "model": "weights/sensors_yolov8m_3cls_100_best.pt",
+      "imgsz": 640,
+      "conf": 0.2,
+      "iou": 0.5,
+      "mode": "normal",
+      "slice_size": 960,
+      "overlap": 0.25,
+      "images": 350,
+      "objects": 1721,
+      "predictions": 1122,
+      "matched": 596,
+      "false_positives": 526,
+      "recall": 0.3463,
+      "precision_like": 0.5312,
+      "seconds": 8.997,
+      "fps": 38.903,
+      "gt_by_size": {
+        "tiny": 446,
+        "small": 657,
+        "large": 425,
+        "medium": 193
+      },
+      "recall_by_size": {
+        "tiny": 0.009,
+        "small": 0.3151,
+        "medium": 0.513,
+        "large": 0.6729
+      },
+      "gt_by_class": {
+        "fire": 1244,
+        "smoke": 477
+      },
+      "recall_by_class": {
+        "fire": 0.2556,
+        "other": 0.0,
+        "smoke": 0.5828
+      },
+      "false_positive_by_class": {
+        "fire": 333,
+        "other": 76,
+        "smoke": 117
+      },
+      "miss_examples": [
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003623.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 2
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005800.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.3693
+            }
+          ],
+          "pred_count": 5
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004394.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.2777
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1886
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1952
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1266
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.1226
+            }
+          ],
+          "pred_count": 7
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001381.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003907.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.4257
+            }
+          ],
+          "pred_count": 3
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007234.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 2
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001557.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0392
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004103.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0326
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0077
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0003
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.1925
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1023
+            }
+          ],
+          "pred_count": 5
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002915.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.4981
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.0409
+            }
+          ],
+          "pred_count": 5
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006781.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.4446
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 3
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000813.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "medium",
+              "best_iou": 0.4785
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 7
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007573.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "medium",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000374.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0612
+            },
+            {
+              "class_name": "fire",
+              "size": "medium",
+              "best_iou": 0.3991
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0067
+            },
+            {
+              "class_name": "fire",
+              "size": "large",
+              "best_iou": 0.3209
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0006
+            }
+          ],
+          "pred_count": 9
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001160.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 0
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005099.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "medium",
+              "best_iou": 0.2101
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "large",
+              "best_iou": 0.1106
+            }
+          ],
+          "pred_count": 7
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004004.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1773
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.012
+            }
+          ],
+          "pred_count": 5
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002191.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007428.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 2
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV002472.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 0
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002637.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.4339
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1024
+            }
+          ],
+          "pred_count": 3
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007210.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005310.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "large",
+              "best_iou": 0.3406
+            }
+          ],
+          "pred_count": 6
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV001302.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 0
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004249.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.405
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.2445
+            }
+          ],
+          "pred_count": 5
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000006.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006799.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007062.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007038.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004798.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.3368
+            }
+          ],
+          "pred_count": 6
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000197.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 0
+        }
+      ]
+    },
+    {
+      "name": "new_p2_normal_960",
+      "model": "/home/uav/gu/stage4/runs/stage4_scout_p2_fasdd_dfire_tile_e20/weights/best.pt",
+      "imgsz": 960,
+      "conf": 0.2,
+      "iou": 0.5,
+      "mode": "normal",
+      "slice_size": 960,
+      "overlap": 0.25,
+      "images": 350,
+      "objects": 1721,
+      "predictions": 1735,
+      "matched": 1462,
+      "false_positives": 273,
+      "recall": 0.8495,
+      "precision_like": 0.8427,
+      "seconds": 8.014,
+      "fps": 43.671,
+      "gt_by_size": {
+        "tiny": 446,
+        "small": 657,
+        "large": 425,
+        "medium": 193
+      },
+      "recall_by_size": {
+        "tiny": 0.6973,
+        "small": 0.8554,
+        "medium": 0.9119,
+        "large": 0.9718
+      },
+      "gt_by_class": {
+        "fire": 1244,
+        "smoke": 477
+      },
+      "recall_by_class": {
+        "fire": 0.8272,
+        "other": 0.0,
+        "smoke": 0.9078
+      },
+      "false_positive_by_class": {
+        "fire": 235,
+        "smoke": 38
+      },
+      "miss_examples": [
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005800.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004394.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.3242
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.3141
+            }
+          ],
+          "pred_count": 7
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001381.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 2
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007234.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.379
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001557.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000374.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.2483
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.2085
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.2286
+            }
+          ],
+          "pred_count": 20
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002191.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "large",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007428.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 8
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007210.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "medium",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_fire_UAV000006.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 0
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007038.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004798.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.3447
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002735.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.2814
+            }
+          ],
+          "pred_count": 10
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV002503.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.3928
+            }
+          ],
+          "pred_count": 6
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV004424.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 5
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_smoke_UAV000965.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.4796
+            }
+          ],
+          "pred_count": 1
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000193.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0785
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.3495
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.3967
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.4068
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1274
+            }
+          ],
+          "pred_count": 18
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001444.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.4788
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.4644
+            }
+          ],
+          "pred_count": 6
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV003934.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.4877
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 6
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000252.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.4843
+            }
+          ],
+          "pred_count": 22
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007243.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.4722
+            }
+          ],
+          "pred_count": 3
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV006932.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1842
+            }
+          ],
+          "pred_count": 2
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005666.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 3
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000579.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 16
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000242.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.3867
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0556
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.1913
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.4352
+            }
+          ],
+          "pred_count": 25
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV007108.jpg",
+          "missed": [
+            {
+              "class_name": "smoke",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 4
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV005229.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "medium",
+              "best_iou": 0.4071
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1295
+            }
+          ],
+          "pred_count": 5
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000226.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0066
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0571
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.4342
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.4101
+            }
+          ],
+          "pred_count": 21
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV001590.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.0
+            }
+          ],
+          "pred_count": 3
+        },
+        {
+          "image": "datasets/stage4_eval/public_hard_holdout/images/holdout_fasdd_uav_test_bothFireAndSmoke_UAV000476.jpg",
+          "missed": [
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0346
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0805
+            },
+            {
+              "class_name": "fire",
+              "size": "tiny",
+              "best_iou": 0.0598
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1813
+            },
+            {
+              "class_name": "fire",
+              "size": "small",
+              "best_iou": 0.1752
+            }
+          ],
+          "pred_count": 22
+        }
+      ]
+    }
+  ]
+}

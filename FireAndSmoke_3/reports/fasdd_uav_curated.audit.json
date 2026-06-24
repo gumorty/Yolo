@@ -1,0 +1,135 @@
+{
+  "data_yaml": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\fasdd_uav_curated\\data.yaml",
+  "names": {
+    "0": "fire",
+    "1": "other",
+    "2": "smoke"
+  },
+  "splits": {
+    "train": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\fasdd_uav_curated\\train\\images",
+      "images": 12551,
+      "missing_labels": 0,
+      "empty_labels": 5994,
+      "duplicate_labels": 0,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 18169,
+        "smoke": 8607
+      },
+      "area_bins": {
+        "tiny(<0.1%)": 5870,
+        "small(0.1-1%)": 9200,
+        "large(>=5%)": 7925,
+        "medium(1-5%)": 3781
+      },
+      "class_area_bins": {
+        "fire|tiny(<0.1%)": 5740,
+        "smoke|small(0.1-1%)": 1576,
+        "smoke|large(>=5%)": 5755,
+        "smoke|tiny(<0.1%)": 130,
+        "fire|small(0.1-1%)": 7624,
+        "smoke|medium(1-5%)": 1146,
+        "fire|large(>=5%)": 2170,
+        "fire|medium(1-5%)": 2635
+      },
+      "image_shapes": {
+        ">1280": 9117,
+        "961-1280": 3434
+      }
+    },
+    "valid": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\fasdd_uav_curated\\val\\images",
+      "images": 8365,
+      "missing_labels": 0,
+      "empty_labels": 3995,
+      "duplicate_labels": 1,
+      "invalid_labels": 0,
+      "instances": {
+        "smoke": 5738,
+        "fire": 12090
+      },
+      "area_bins": {
+        "small(0.1-1%)": 6197,
+        "tiny(<0.1%)": 3871,
+        "medium(1-5%)": 2517,
+        "large(>=5%)": 5243
+      },
+      "class_area_bins": {
+        "smoke|small(0.1-1%)": 1019,
+        "fire|tiny(<0.1%)": 3798,
+        "fire|small(0.1-1%)": 5178,
+        "smoke|medium(1-5%)": 795,
+        "smoke|large(>=5%)": 3851,
+        "smoke|tiny(<0.1%)": 73,
+        "fire|large(>=5%)": 1392,
+        "fire|medium(1-5%)": 1722
+      },
+      "image_shapes": {
+        ">1280": 6091,
+        "961-1280": 2274
+      }
+    },
+    "test": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_sources\\fasdd_uav_curated\\test\\images",
+      "images": 4181,
+      "missing_labels": 0,
+      "empty_labels": 1997,
+      "duplicate_labels": 0,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 6049,
+        "smoke": 2877
+      },
+      "area_bins": {
+        "tiny(<0.1%)": 1997,
+        "small(0.1-1%)": 3042,
+        "medium(1-5%)": 1268,
+        "large(>=5%)": 2619
+      },
+      "class_area_bins": {
+        "fire|tiny(<0.1%)": 1956,
+        "smoke|tiny(<0.1%)": 41,
+        "smoke|small(0.1-1%)": 510,
+        "fire|small(0.1-1%)": 2532,
+        "smoke|medium(1-5%)": 437,
+        "smoke|large(>=5%)": 1889,
+        "fire|large(>=5%)": 730,
+        "fire|medium(1-5%)": 831
+      },
+      "image_shapes": {
+        ">1280": 3055,
+        "961-1280": 1126
+      }
+    }
+  },
+  "totals": {
+    "images": 25097,
+    "missing_labels": 0,
+    "empty_labels": 11986,
+    "instances": {
+      "fire": 36308,
+      "smoke": 17222
+    },
+    "area_bins": {
+      "tiny(<0.1%)": 11738,
+      "small(0.1-1%)": 18439,
+      "large(>=5%)": 15787,
+      "medium(1-5%)": 7566
+    },
+    "class_area_bins": {
+      "fire|tiny(<0.1%)": 11494,
+      "smoke|small(0.1-1%)": 3105,
+      "smoke|large(>=5%)": 11495,
+      "smoke|tiny(<0.1%)": 244,
+      "fire|small(0.1-1%)": 15334,
+      "smoke|medium(1-5%)": 2378,
+      "fire|large(>=5%)": 4292,
+      "fire|medium(1-5%)": 5188
+    },
+    "image_shapes": {
+      ">1280": 18263,
+      "961-1280": 6834
+    }
+  }
+}

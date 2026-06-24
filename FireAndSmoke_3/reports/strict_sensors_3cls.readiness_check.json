@@ -1,0 +1,52 @@
+{
+  "data_yaml": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\strict_sensors_3cls\\data.yaml",
+  "pass": false,
+  "checks": [
+    {
+      "name": "train tiny+small fire",
+      "value": 5425,
+      "threshold": 5000,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "train tiny+small smoke",
+      "value": 118,
+      "threshold": 1000,
+      "op": ">=",
+      "pass": false
+    },
+    {
+      "name": "valid tiny+small fire",
+      "value": 2002,
+      "threshold": 300,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "valid tiny+small smoke",
+      "value": 40,
+      "threshold": 100,
+      "op": ">=",
+      "pass": false
+    },
+    {
+      "name": "total tiny+small other hard negatives",
+      "value": 9596,
+      "threshold": 1000,
+      "op": ">=",
+      "pass": true
+    },
+    {
+      "name": "high-resolution source ratio",
+      "value": 0.0,
+      "threshold": 0.2,
+      "op": ">=",
+      "pass": false
+    }
+  ],
+  "image_shapes": {
+    "max_side<=640": 27294
+  },
+  "recommendation": "Do not start training yet. Fix failed priors first: train tiny+small smoke, valid tiny+small smoke, high-resolution source ratio"
+}

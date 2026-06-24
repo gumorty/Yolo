@@ -1,0 +1,23 @@
+{
+  "model": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\runs_stage6_scout\\stage6_scout_hardneg_ft_e5\\weights\\best.pt",
+  "data": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage6_eval\\uav_false_alarm_v1\\data.yaml",
+  "split": "val",
+  "imgsz": 960,
+  "conf": 0.2,
+  "iou": 0.5,
+  "images": 100,
+  "gt_by_size": {},
+  "matched_by_size": {},
+  "recall_by_size": {
+    "tiny": 0.0,
+    "small": 0.0,
+    "medium": 0.0,
+    "large": 0.0
+  },
+  "gt_by_class": {},
+  "matched_by_class": {},
+  "recall_by_class": {},
+  "false_positive_by_class": {
+    "2": 6
+  }
+}

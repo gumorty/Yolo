@@ -1,0 +1,159 @@
+{
+  "data_yaml": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_full_tile_sensors3\\data.yaml",
+  "names": {
+    "0": "fire",
+    "1": "other",
+    "2": "smoke"
+  },
+  "splits": {
+    "train": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_full_tile_sensors3\\train\\images",
+      "images": 75744,
+      "missing_labels": 0,
+      "empty_labels": 12560,
+      "duplicate_labels": 2,
+      "invalid_labels": 0,
+      "instances": {
+        "smoke": 70799,
+        "fire": 90385,
+        "other": 15542
+      },
+      "area_bins": {
+        "medium(1-5%)": 36426,
+        "small(0.1-1%)": 51081,
+        "large(>=5%)": 74004,
+        "tiny(<0.1%)": 15215
+      },
+      "class_area_bins": {
+        "smoke|medium(1-5%)": 10058,
+        "fire|small(0.1-1%)": 34083,
+        "fire|large(>=5%)": 19866,
+        "smoke|small(0.1-1%)": 7513,
+        "smoke|tiny(<0.1%)": 1498,
+        "smoke|large(>=5%)": 51730,
+        "fire|medium(1-5%)": 23400,
+        "fire|tiny(<0.1%)": 13036,
+        "other|medium(1-5%)": 2968,
+        "other|large(>=5%)": 2408,
+        "other|small(0.1-1%)": 9485,
+        "other|tiny(<0.1%)": 681
+      },
+      "image_shapes": {
+        "961-1280": 5978,
+        "641-960": 24825,
+        ">1280": 9334,
+        "max_side<=640": 35607
+      }
+    },
+    "valid": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_full_tile_sensors3\\val\\images",
+      "images": 38306,
+      "missing_labels": 0,
+      "empty_labels": 7099,
+      "duplicate_labels": 10,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 47930,
+        "smoke": 33343,
+        "other": 5897
+      },
+      "area_bins": {
+        "small(0.1-1%)": 25915,
+        "tiny(<0.1%)": 9179,
+        "large(>=5%)": 35235,
+        "medium(1-5%)": 16841
+      },
+      "class_area_bins": {
+        "fire|small(0.1-1%)": 19304,
+        "fire|tiny(<0.1%)": 8489,
+        "fire|large(>=5%)": 8851,
+        "smoke|small(0.1-1%)": 2919,
+        "smoke|medium(1-5%)": 4500,
+        "fire|medium(1-5%)": 11286,
+        "smoke|tiny(<0.1%)": 371,
+        "smoke|large(>=5%)": 25553,
+        "other|small(0.1-1%)": 3692,
+        "other|large(>=5%)": 831,
+        "other|medium(1-5%)": 1055,
+        "other|tiny(<0.1%)": 319
+      },
+      "image_shapes": {
+        "961-1280": 2761,
+        "641-960": 14983,
+        ">1280": 6132,
+        "max_side<=640": 14430
+      }
+    },
+    "test": {
+      "image_dir": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_full_tile_sensors3\\test\\images",
+      "images": 5264,
+      "missing_labels": 0,
+      "empty_labels": 47,
+      "duplicate_labels": 2,
+      "invalid_labels": 0,
+      "instances": {
+        "fire": 5494,
+        "smoke": 5136,
+        "other": 2401
+      },
+      "area_bins": {
+        "small(0.1-1%)": 3245,
+        "large(>=5%)": 6506,
+        "medium(1-5%)": 3174,
+        "tiny(<0.1%)": 106
+      },
+      "class_area_bins": {
+        "fire|small(0.1-1%)": 1680,
+        "smoke|large(>=5%)": 4660,
+        "fire|large(>=5%)": 1490,
+        "fire|medium(1-5%)": 2302,
+        "smoke|medium(1-5%)": 442,
+        "smoke|small(0.1-1%)": 34,
+        "other|large(>=5%)": 356,
+        "other|small(0.1-1%)": 1531,
+        "other|medium(1-5%)": 430,
+        "other|tiny(<0.1%)": 84,
+        "fire|tiny(<0.1%)": 22
+      },
+      "image_shapes": {
+        "max_side<=640": 5264
+      }
+    }
+  },
+  "totals": {
+    "images": 119314,
+    "missing_labels": 0,
+    "empty_labels": 19706,
+    "instances": {
+      "smoke": 109278,
+      "fire": 143809,
+      "other": 23840
+    },
+    "area_bins": {
+      "medium(1-5%)": 56441,
+      "small(0.1-1%)": 80241,
+      "large(>=5%)": 115745,
+      "tiny(<0.1%)": 24500
+    },
+    "class_area_bins": {
+      "smoke|medium(1-5%)": 15000,
+      "fire|small(0.1-1%)": 55067,
+      "fire|large(>=5%)": 30207,
+      "smoke|small(0.1-1%)": 10466,
+      "smoke|tiny(<0.1%)": 1869,
+      "smoke|large(>=5%)": 81943,
+      "fire|medium(1-5%)": 36988,
+      "fire|tiny(<0.1%)": 21547,
+      "other|medium(1-5%)": 4453,
+      "other|large(>=5%)": 3595,
+      "other|small(0.1-1%)": 14708,
+      "other|tiny(<0.1%)": 1084
+    },
+    "image_shapes": {
+      "961-1280": 8739,
+      "641-960": 39808,
+      ">1280": 15466,
+      "max_side<=640": 55301
+    }
+  }
+}

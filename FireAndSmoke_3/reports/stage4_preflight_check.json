@@ -1,0 +1,87 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "name": "data_yaml_exists",
+      "pass": true,
+      "detail": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_full_tile_sensors3\\data.yaml"
+    },
+    {
+      "name": "holdout_yaml_exists",
+      "pass": true,
+      "detail": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\datasets\\stage4_eval\\public_hard_holdout\\data.yaml"
+    },
+    {
+      "name": "model_yaml_exists",
+      "pass": true,
+      "detail": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\models\\yolov8m-p2-fire-smoke-3cls.yaml"
+    },
+    {
+      "name": "pretrained_exists",
+      "pass": true,
+      "detail": "D:\\Researching\\Yolo\\FireAndSmoke\\FireAndSmoke_3\\weights\\sensors_yolov8m_3cls_100_best.pt"
+    },
+    {
+      "name": "data_yaml_uses_relative_paths",
+      "pass": true,
+      "detail": {
+        "train": "train/images",
+        "val": "val/images",
+        "test": "test/images",
+        "nc": 3,
+        "names": [
+          "fire",
+          "other",
+          "smoke"
+        ]
+      }
+    },
+    {
+      "name": "train_images_count",
+      "pass": true,
+      "detail": 75744
+    },
+    {
+      "name": "val_images_count",
+      "pass": true,
+      "detail": 38306
+    },
+    {
+      "name": "readiness_minimums",
+      "pass": true,
+      "detail": {
+        "train_tiny_small_fire": 47119,
+        "train_tiny_small_smoke": 9011,
+        "valid_tiny_small_fire": 27793,
+        "valid_tiny_small_smoke": 3290,
+        "highres_ratio": 0.5365
+      }
+    },
+    {
+      "name": "holdout_yaml_uses_relative_paths",
+      "pass": true,
+      "detail": {
+        "train": "images",
+        "val": "images",
+        "test": "images",
+        "nc": 3,
+        "names": [
+          "fire",
+          "other",
+          "smoke"
+        ]
+      }
+    },
+    {
+      "name": "holdout_images_count",
+      "pass": true,
+      "detail": 500
+    },
+    {
+      "name": "model_pretrained_load",
+      "pass": true,
+      "detail": "Model YAML builds and pretrained weights load."
+    }
+  ],
+  "recommendation": "Ready for Stage4 scout training."
+}

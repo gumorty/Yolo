@@ -1,7 +1,7 @@
 # Stage4 训练状态综合分析报告
 
 生成日期：2026-06-12
-分析范围：服务器 221.14.87.239 + 本地 D:\Researching\Yolo\FireAndSmoke\FireAndSmoke_3
+分析范围：服务器 <YOLO_REMOTE_HOST> + 本地 D:\Researching\Yolo\FireAndSmoke\FireAndSmoke_3
 
 ---
 

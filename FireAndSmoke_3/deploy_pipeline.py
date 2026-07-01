@@ -8,13 +8,19 @@ Steps:
 4. Start pipeline in background with nohup
 """
 import paramiko
+import os
 import time
 import sys
 
-HOST = '221.14.87.239'
-PORT = 6022
-USER = 'uav'
-PASS = 'Hpu@1909'
+HOST = os.getenv('YOLO_REMOTE_HOST')
+PORT = int(os.getenv('YOLO_REMOTE_PORT', '22'))
+USER = os.getenv('YOLO_REMOTE_USER')
+PASS = os.getenv('YOLO_REMOTE_PASSWORD')
+if not all([HOST, USER, PASS]):
+    raise RuntimeError(
+        'Set YOLO_REMOTE_HOST, YOLO_REMOTE_PORT, YOLO_REMOTE_USER, '
+        'and YOLO_REMOTE_PASSWORD before running deployment.'
+    )
 REMOTE_BASE = '/home/uav/gu/stage4'
 
 # ============================================================

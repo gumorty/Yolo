@@ -4,7 +4,7 @@ This folder archives the latest server-side experiment evidence from `/home/uav/
 
 ## Sync Scope
 
-- Remote host: `221.14.87.239:6022`
+- Remote host: `<YOLO_REMOTE_HOST>:<YOLO_REMOTE_PORT>`
 - Remote root: `/home/uav/gu`
 - Local root: `D:\Researching\Yolo\FireAndSmoke\FireAndSmoke_3\paper_artifacts\server_sync_20260616`
 - Manifest: `sync_manifest.json`
@@ -50,6 +50,6 @@ This supports a cautious claim: the P2 head mainly improves tiny fire recall, wh
 
 ## Notes
 
-- The password provided in the latest request (`Hpu@1090`) failed authentication. The project helper credential (`Hpu@1909`) succeeded.
+- The password provided in the latest request (`<REDACTED_PASSWORD>`) failed authentication. The project helper credential (`<YOLO_REMOTE_PASSWORD>`) succeeded.
 - Ultralytics evaluates only classes with ground-truth instances in the holdout: class indices `[0, 2]`, corresponding to `fire` and `smoke`. The corrected No-P2 JSON maps the second compact class row to `smoke`.
 - The per-size AP script uses project audit bins: tiny `<0.1%`, small `0.1%-1%`, medium `1%-5%`, large `>=5%` of image area.

@@ -1,16 +1,28 @@
-"""SSH helper script to execute commands on the remote server."""
+"""SSH helper script to execute commands on the remote server.
+
+Set YOLO_REMOTE_HOST, YOLO_REMOTE_PORT, YOLO_REMOTE_USER, and
+YOLO_REMOTE_PASSWORD in the environment before running this helper.
+"""
+import os
 import paramiko
 import sys
+
+
+def _required_env(name: str) -> str:
+    value = os.getenv(name)
+    if not value:
+        raise RuntimeError(f"Missing required environment variable: {name}")
+    return value
 
 def run_command(cmd: str, timeout: int = 120) -> str:
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try:
         client.connect(
-            hostname="221.14.87.239",
-            port=6022,
-            username="uav",
-            password="Hpu@1909",
+            hostname=_required_env("YOLO_REMOTE_HOST"),
+            port=int(os.getenv("YOLO_REMOTE_PORT", "22")),
+            username=_required_env("YOLO_REMOTE_USER"),
+            password=_required_env("YOLO_REMOTE_PASSWORD"),
             timeout=30,
         )
         transport = client.get_transport()

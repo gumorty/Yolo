@@ -1,7 +1,7 @@
 # Stage4→5 训练分析与下一步执行报告
 
 生成日期：2026-06-13 14:30 CST
-服务器：221.14.87.239:6022 (uav@/home/uav/gu)
+服务器：<YOLO_REMOTE_HOST>:<YOLO_REMOTE_PORT> (<YOLO_REMOTE_USER>@/home/uav/gu)
 
 ---
 

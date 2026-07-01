@@ -2,7 +2,7 @@
 
 生成日期：2026-06-12 20:00 CST
 执行人：AI Agent
-服务器：221.14.87.239:6022 (uav@/home/uav/gu)
+服务器：<YOLO_REMOTE_HOST>:<YOLO_REMOTE_PORT> (<YOLO_REMOTE_USER>@/home/uav/gu)
 
 ---
 
@@ -199,7 +199,7 @@ MPLBACKEND=Agg nohup python3 /home/uav/gu/stage4/run_e120_train.py \
 ### 监控命令
 ```bash
 # SSH 连接
-ssh -p 6022 uav@221.14.87.239
+ssh -p 6022 <YOLO_REMOTE_USER>@<YOLO_REMOTE_HOST>
 
 # 查看训练进度
 tail -20 /home/uav/gu/stage4/stage4_e60_resume_v2.log

@@ -1,0 +1,8 @@
+﻿model,weight,images,imgsz,params_raw,gflops_raw,weight_mb,latency_ms_mean,latency_ms_p50,latency_ms_p95,fps_mean,info_raw,params,gflops_960
+nop2_yolov8m,/home/uav/gu/ablation_p2/runs/yolov8m_nop2_baseline_960/weights/best.pt,200,960,,,49.69,26.601,28.822,32.316,37.592,None,25858057,177.912
+v4_p2,/home/uav/gu/projects/FireAndSmoke_3/models_stage4/v4_best.pt,200,960,,,48.54,29.572,32.703,36.716,33.815,None,25052620,221.613
+s5_p2,/home/uav/gu/projects/FireAndSmoke_3/models_stage4/s5_best.pt,200,960,,,48.54,29.634,32.458,36.999,33.745,None,25052620,221.613
+d7_hardneg_p2,/home/uav/gu/projects/FireAndSmoke_3/runs_stage6_server4090/stage6_d7_s5_hardneg_balanced_x4_i960_seed1/weights/best.pt,200,960,,,48.54,29.685,32.565,36.593,33.687,None,25052620,221.613
+yolov8n_baseline,/home/uav/gu/projects/FireAndSmoke_3/runs_stage7_baselines/stage7_yolov8n_stage4_i960_e100/weights/best.pt,200,960,,,6.03,24.023,26.227,29.325,41.626,None,3011433,18.442
+yolov8s_baseline,/home/uav/gu/projects/FireAndSmoke_3/runs_stage7_baselines/stage7_yolov8s_stage4_i960_e100/weights/best.pt,200,960,,,21.54,24.382,26.394,30.513,41.013,None,11136761,64.465
+yolov8m_baseline,/home/uav/gu/projects/FireAndSmoke_3/runs_stage7_baselines/stage7_yolov8m_stage4_i960_e100/weights/best.pt,200,960,,,49.69,27.147,29.157,32.773,36.837,None,25858057,177.912
